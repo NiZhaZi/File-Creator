@@ -1,0 +1,5 @@
+legacy/
+.vscode/
+
+*.bat
+*.exe
