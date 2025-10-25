@@ -1,19 +1,18 @@
 ; ===================================================================
 ; CreateFile Installer (Inno Setup Script)
-; Everything in this project is in English per user request.
 ; ===================================================================
 
 [Setup]
 ; --- App metadata ---
 AppId={{7C8A9A3B-BAA7-4B8A-9A96-7E470C7302F0}}
 AppName=CreateFile
-AppVersion=0.0.1
-VersionInfoVersion=0.0.1
-AppPublisher=YourCompany
-AppPublisherURL=https://example.com
+AppVersion=0.0.2
+VersionInfoVersion=0.0.2
+AppPublisher=NiZhaZi
+; AppPublisherURL=https://example.com
 DefaultDirName={autopf}\CreateFile
 DefaultGroupName=CreateFile
-OutputBaseFilename=CreateFile-0.0.1-Setup
+OutputBaseFilename=CreateFile-0.0.2-x86_64-Setup
 OutputDir=output
 WizardStyle=modern
 
@@ -48,7 +47,7 @@ Name: "{group}\Uninstall CreateFile"; Filename: "{uninstallexe}"
 ; 1) Right-click on empty background inside a folder
 Root: HKCR; Subkey: "Directory\Background\shell\Create File"; ValueType: string; ValueName: ""; ValueData: "Create File"; Flags: uninsdeletekey
 Root: HKCR; Subkey: "Directory\Background\shell\Create File"; ValueType: string; ValueName: "Icon"; ValueData: "{app}\bin\createFile.exe"
-Root: HKCR; Subkey: "Directory\Background\shell\Create File\command"; ValueType: string; ValueName: ""; ValueData: """{app}\bin\createFile.exe"" ""%V"""
+Root: HKCR; Subkey: "Directory\Background\shell\Create File\command"; ValueType: string; ValueName: ""; ValueData: """{app}\bin\createFile.exe"""
 
 ; 2) Right-click on a folder itself
 Root: HKCR; Subkey: "Directory\shell\Create File"; ValueType: string; ValueName: ""; ValueData: "Create File"; Flags: uninsdeletekey

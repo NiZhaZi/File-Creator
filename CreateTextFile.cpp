@@ -5,7 +5,7 @@
 #include <windows.h>
 
 namespace fs = std::filesystem;
-std::string version = "0.0.1";
+std::string version = "0.0.2";
 
 // Check if file exists
 bool fileExists(const std::string& filename) {
@@ -64,13 +64,14 @@ std::string getCurrentDirectory() {
 
 // Show version information
 void showVersion() {
-    std::cout << "CreateFile Utility - Version 1.0.0" << std::endl;
+    // std::cout << "CreateFile Utility - Version 1.0.0" << std::endl;
     std::cout << "CreateFile Utility - Version " << version << std::endl;
     std::cout << "A simple tool for creating text files without extensions" << std::endl;
 }
 
 // Show usage information
 void showUsage() {
+    std::cout << "Source code at https://github.com/NiZhaZi/File-Creator\n";
     std::cout << "CreateFile - Create extensionless text files\n\n";
     std::cout << "Usage:\n";
     std::cout << "  CreateFile [options] [filename] [content]\n";
